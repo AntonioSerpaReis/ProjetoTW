@@ -40,6 +40,7 @@ export async function initDB() {
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             username TEXT UNIQUE,
             email TEXT
+            encryptedPassword TEXT
         );
     `);
 
