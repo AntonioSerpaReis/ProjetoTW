@@ -5,7 +5,7 @@ import { ResearchSection, PartnersSection, OpportunitiesSection } from './compon
 import ContactSection from './components/Sections/ContactSection';
 // Import Footer, Newsletter, etc...
 
-export default function App() {
+export default function IndexApp() {
   return (
     <>
       <noscript>
