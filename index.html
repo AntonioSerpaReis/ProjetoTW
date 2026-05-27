@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro Académico Clínico dos Açores - Parceria entre a Universidade dos Açores e instituições de saúde regionais, dedicada à investigação clínica de excelência e telemedicina.">
+    <meta name="keywords" content="CACA, saúde, Açores, investigação clínica, telemedicina, e-saúde, universidade">
+    <title>CACA | Centro Académico Clínico dos Açores</title>
+    <link rel="stylesheet" href="./components/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="preload" as="image" href="./assets/imagem.webp" type="image/webp" fetchpriority="high">
+</head>
+
+<body>
+    <noscript>
+        <div class="java-disabled">
+            <p><strong>Aviso:</strong> O JavaScript está desativado. Para uma experiência completa, por favor ative o
+                JavaScript.</p>
+        </div>
+    </noscript>
+
+    <header class="header" id="header" role="banner">
+        <div class="header__container">
+            <a href="#" class="header__logo" aria-label="Página inicial do CACA">
+                <div class="logo">
+                    <img src="./assets/logo-caca.svg" alt="Logo CACA" class="header__logo-img" width="60" height="60">
+                </div>
+            </a>
+
+            <nav class="header__nav" id="mainNav" role="navigation" aria-label="Navegação principal">
+                <a href="#missao" class="header__nav-link">Missão</a>
+                <a href="#parceiros" class="header__nav-link">Parceiros</a>
+                <a href="#oportunidades" class="header__nav-link">Oportunidades</a>
+                <a href="#contactos" class="header__nav-link">Contactos</a>
+                <a href="./eventos.html" class="header__nav-link">Eventos</a>
+            </nav>
+
+            <button type="button" class="header__hamburger" id="menuToggle" aria-label="Abrir menu de navegação"
+                aria-expanded="false" aria-controls="mainNav">
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+                <span class="header__hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="missao" class="hero" aria-label="Secção principal">
+            <div class="hero__container">
+
+                <h1 class="hero__title">Construindo o Futuro<br>da Saúde nos Açores</h1>
+                <p class="hero__subtitle">
+                    Uma parceria inovadora entre a Universidade dos Açores e instituições
+                    de saúde regionais, dedicada à investigação clínica de excelência,
+                    ao ensino de qualidade e à melhoria dos cuidados de saúde nas ilhas.
+                </p>
+
+                <div class="hero__cta-group">
+                    <button type="button" class="btn btn--outline btn--large" id="SaberMais"
+                        style="border-width: 1px;">Conheça as Nossas Áreas</button>
+                </div>
+
+                <div class="hero__gallery">
+                    <div class="carousel" id="heroCarousel">
+                        <div class="carousel-inner">
+                            <picture>
+                                <source srcset="./assets/imagem.webp" type="image/webp">
+                                <img src="./assets/imagem.jpg" alt="Paisagem dos Açores" class="carousel-item active" fetchpriority="high" loading="eager" width="1050" height="590">
+                            </picture>
+                            <picture>
+                                <source srcset="./assets/uac.webp" type="image/webp">
+                                <img src="./assets/uac.png" alt="Universidade dos Açores" class="carousel-item" loading="lazy" width="1050" height="590">
+                            </picture>
+                            <picture>
+                                <source srcset="./assets/governo-acores.webp" type="image/webp">
+                                <img src="./assets/governo-acores.jpg" alt="Governo dos Açores" class="carousel-item" loading="lazy" width="1050" height="590">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="investigacao" class="section research-areas" aria-labelledby="investigacao-titulo">
+            <div class="container">
+                <h2 class="section__title" id="investigacao-titulo">Áreas de Investigação</h2>
+                <p class="section__description">Desenvolvendo soluções inovadoras para os desafios da saúde regional e
+                    global</p>
+
+                <div class="research">
+                    <article class="research__card" tabindex="0">
+                        <div class="research__icon-wrap">
+                            <i class="fi fi-rr-computer"></i>
+                        </div>
+                        <div class="research__content">
+                            <h3 class="research__card-title">e-Saúde</h3>
+                            <p class="research__card-text">Desenvolvimento de plataformas digitais para gestão de saúde,
+                                telesaúde e monitorização remota de pacientes nas ilhas.</p>
+                        </div>
+                    </article>
+
+                    <article class="research__card" tabindex="0">
+                        <div class="research__icon-wrap">
+                            <i class="fi fi-rr-brain"></i>
+                        </div>
+                        <div class="research__content">
+                            <h3 class="research__card-title">Inteligência Artificial</h3>
+                            <p class="research__card-text">Aplicação de machine learning e análise preditiva para
+                                diagnóstico
+                                precoce e otimização de processos clínicos.</p>
+                        </div>
+                    </article>
+
+                    <article class="research__card" tabindex="0">
+                        <div class="research__icon-wrap">
+                            <i class="fi fi-rr-video-camera"></i>
+                        </div>
+                        <div class="research__content">
+                            <h3 class="research__card-title">Telemedicina</h3>
+                            <p class="research__card-text">Soluções inovadoras de teleconsulta para populações insulares
+                                e
+                                áreas remotas, reduzindo barreiras geográficas.</p>
+                        </div>
+                    </article>
+
+                    <article class="research__card" tabindex="0">
+                        <div class="research__icon-wrap">
+                            <i class="fi fi-rr-search-alt"></i>
+                        </div>
+                        <div class="research__content">
+                            <h3 class="research__card-title">Epidemiologia Regional</h3>
+                            <p class="research__card-text">Estudos de prevalência de doenças e fatores de risco
+                                específicos das
+                                populações insulares.</p>
+                        </div>
+                    </article>
+
+                    <article class="research__card" tabindex="0">
+                        <div class="research__icon-wrap">
+                            <i class="fi fi-rr-shield-check"></i>
+                        </div>
+                        <div class="research__content">
+                            <h3 class="research__card-title">Saúde Pública</h3>
+                            <p class="research__card-text">Promoção da saúde e desenvolvimento de intervenções
+                                comunitárias
+                                adaptadas à realidade açoriana.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="news-feed" class="section section--alt" aria-labelledby="noticias-titulo">
+            <div class="container">
+                <h2 class="section__title" id="noticias-titulo">Notícias Recentes</h2>
+                <p class="section__description">Acompanhe as últimas novidades em saúde e tecnologia.</p>
+
+                <div id="news-container" class="news">
+                    <p>A carregar notícias...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="parceiros" class="section section--alt" aria-labelledby="parceiros-titulo">
+            <div class="container">
+                <h2 class="section__title" id="parceiros-titulo">Nossos Parceiros</h2>
+                <p class="section__description">Colaboração institucional para excelência em saúde e investigação</p>
+
+                <div class="partners">
+                    <div class="partners__item" tabindex="0">
+                        <i class="fi fi-rr-graduation-cap"
+                            style="font-size: 40px; color: var(--azul-500); margin-bottom: 10px;"></i>
+                        <span class="partners__name">Universidade dos Açores</span>
+                    </div>
+                    <div class="partners__item" tabindex="0">
+                        <i class="fi fi-rr-hospital"
+                            style="font-size: 40px; color: var(--azul-500); margin-bottom: 10px;"></i>
+                        <span class="partners__name">Hospital Regional dos Açores</span>
+                    </div>
+                    <div class="partners__item" tabindex="0">
+                        <i class="fi fi-rr-building"
+                            style="font-size: 40px; color: var(--azul-500); margin-bottom: 10px;"></i>
+                        <span class="partners__name">Governo Regional dos Açores</span>
+                    </div>
+                    <div class="partners__item" tabindex="0">
+                        <i class="fi fi-rr-microscope"
+                            style="font-size: 40px; color: var(--azul-500); margin-bottom: 10px;"></i>
+                        <span class="partners__name">Centros de Investigação</span>
+                    </div>
+                    <div class="partners__item" tabindex="0">
+                        <i class="fi fi-rr-globe"
+                            style="font-size: 40px; color: var(--azul-500); margin-bottom: 10px;"></i>
+                        <span class="partners__name">Parceiros Internacionais</span>
+                    </div>
+                </div>
+                <p class="section__description" style="margin-top: 20px;">+ várias outras instituições colaboradoras</p>
+            </div>
+        </section>
+
+        <section id="oportunidades" class="section" aria-labelledby="oportunidades-titulo">
+            <div class="container">
+                <h2 class="section__title" id="oportunidades-titulo">Oportunidades</h2>
+                <p class="section__description">Junte-se a nós na construção do futuro da saúde</p>
+
+                <div class="opportunities">
+                    <a href="#" class="opportunities__card" tabindex="0">
+                        <div class="opportunities__icon">
+                            <i class="fi fi-rr-graduation-cap"></i>
+                        </div>
+                        <div class="opportunities__content">
+                            <h3 class="opportunities__title">Estágios</h3>
+                            <p class="opportunities__text">Programas de estágio em investigação clínica e áreas
+                                tecnológicas de saúde.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="opportunities__card" tabindex="0">
+                        <div class="opportunities__icon">
+                            <i class="fi fi-rr-microscope"></i>
+                        </div>
+                        <div class="opportunities__content">
+                            <h3 class="opportunities__title">Projetos de Investigação</h3>
+                            <p class="opportunities__text">Oportunidades de participação em projetos inovadores
+                                financiados por programas de saúde.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="opportunities__card" tabindex="0">
+                        <div class="opportunities__icon">
+                            <i class="fi fi-rr-book"></i>
+                        </div>
+                        <div class="opportunities__content">
+                            <h3 class="opportunities__title">Teses e Dissertações</h3>
+                            <p class="opportunities__text">Temas de investigação para mestrados e doutoramentos nas
+                                áreas da saúde.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="opportunities__card" tabindex="0">
+                        <div class="opportunities__icon">
+                            <i class="fi fi-rr-coins"></i>
+                        </div>
+                        <div class="opportunities__content">
+                            <h3 class="opportunities__title">Bolsas de Investigação</h3>
+                            <p class="opportunities__text">Bolsas de investigação apoiando projetos de excelência em
+                                saúde e inovação biomédica.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="grafico" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Gráfico de Oportunidades</h2>
+
+                <div class="chart-wrapper">
+                    <h3 class="chart-wrapper__title">Oportunidades por Ilha</h3>
+                    <p class="chart-wrapper__subtitle" id="estatisticas-grafico">Distribuíção de oportunidades em curso
+                        nos Açores</p>
+                    <div class="grafico-placeholder chart">
+                        <svg id="opportunityChart" tabindex="0" aria-label="Gráfico de Barras de Oportunidades">
+                            <g class="eixo-x"></g>
+                            <g class="corpo-grafico"></g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactos" class="section">
+            <div class="container">
+                <h2 class="section__title">Contactos</h2>
+                <p class="section__description">Fale connosco. Estamos aqui para ajudar e esclarecer qualquer dúvida.
+                </p>
+
+                <!-- Top: Info + Form -->
+                <div class="contact-top">
+                    <!-- Left column -->
+                    <div class="contact-info">
+                        <h2 class="contact-info__title">Contacte-nos</h2>
+                        <p class="contact-info__subtitle">
+                            Envie-nos um email, ligue ou preencha o formulário para saber como o CACA pode apoiar a sua
+                            investigação ou colaboração.
+                        </p>
+
+                        <div class="contact-info__item">
+                            <i class="fi fi-rr-envelope"></i>
+                            <span>geral@caca.uac.pt</span>
+                        </div>
+                        <div class="contact-info__item">
+                            <i class="fi fi-rr-phone-call"></i>
+                            <span>+351 296 650 000</span>
+                        </div>
+                        <div class="contact-info__item">
+                            <i class="fi fi-rr-marker"></i>
+                            <span>Campus de Ponta Delgada, Rua da Mãe de Deus, 9500-321</span>
+                        </div>
+
+                        <a href="#contactos" class="contact-info__link">Suporte ao Investigador</a>
+                    </div>
+
+                    <!-- Right column – Form card -->
+                    <div class="contact-form-card">
+                        <h3 class="contact-form-card__title">Fale Connosco</h3>
+                        <p class="contact-form-card__subtitle">Pode contactar-nos a qualquer momento</p>
+
+                        <form class="c-form" aria-label="Formulário de contacto">
+                            <div class="c-form__row">
+                                <div class="c-form__group">
+                                    <label class="sr-only" for="first-name">Primeiro nome</label>
+                                    <div class="c-form__input-wrap">
+                                        <input type="text" id="first-name" name="first-name"
+                                            class="c-form__input c-form__input--no-icon" placeholder="Primeiro nome"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="c-form__group">
+                                    <label class="sr-only" for="last-name">Apelido</label>
+                                    <div class="c-form__input-wrap">
+                                        <input type="text" id="last-name" name="last-name"
+                                            class="c-form__input c-form__input--no-icon" placeholder="Apelido" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-form__group">
+                                <label class="sr-only" for="email">Endereço de email</label>
+                                <div class="c-form__input-wrap">
+                                    <i class="fi fi-rr-envelope c-form__icon"></i>
+                                    <input type="email" id="email" name="email" class="c-form__input"
+                                        placeholder="O seu email" required>
+                                </div>
+                            </div>
+
+                            <div class="c-form__group">
+                                <label class="sr-only" for="phone">Telemóvel</label>
+                                <div class="c-form__phone-row">
+                                    <div class="c-form__phone-select-wrap">
+                                        <i class="fi fi-rr-phone-call c-form__icon"></i>
+                                        <select id="country-code" name="country-code" class="c-form__phone-select"
+                                            aria-label="Indicativo">
+                                            <option value="+351" selected>+351</option>
+                                            <option value="+55">+55</option>
+                                            <option value="+34">+34</option>
+                                            <option value="+44">+44</option>
+                                            <option value="+1">+1</option>
+                                        </select>
+                                    </div>
+                                    <div class="c-form__input-wrap c-form__phone-input">
+                                        <input type="tel" id="phone" name="phone"
+                                            class="c-form__input c-form__input--no-icon"
+                                            placeholder="Número de telemóvel" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-form__group">
+                                <label class="sr-only" for="message">Mensagem</label>
+                                <div class="c-form__textarea-wrap">
+                                    <textarea id="message" name="message" class="c-form__input c-form__textarea"
+                                        placeholder="Como podemos ajudar?" maxlength="120" required></textarea>
+                                    <span class="c-form__char-count">0/120</span>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="c-form__submit">Enviar Mensagem</button>
+
+                            <p class="c-form__terms">
+                                Ao contactar-nos, concorda com os nossos <a href="#termos">Termos de Uso</a> e <a
+                                    href="#privacidade">Política de Privacidade</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Bottom info cards -->
+                <div class="contact-bottom-cards">
+                    <div class="contact-bottom-card">
+                        <h4 class="contact-bottom-card__title">Suporte Geral</h4>
+                        <p class="contact-bottom-card__text">
+                            A nossa equipa de suporte está disponível para esclarecer qualquer dúvida ou questão que
+                            possa ter.
+                        </p>
+                    </div>
+                    <div class="contact-bottom-card">
+                        <h4 class="contact-bottom-card__title">Investigação e Parcerias</h4>
+                        <p class="contact-bottom-card__text">
+                            Valorizamos a colaboração e estamos sempre abertos a novas parcerias. O seu contributo é
+                            essencial para o futuro do CACA.
+                        </p>
+                    </div>
+                    <div class="contact-bottom-card">
+                        <h4 class="contact-bottom-card__title">Comunicação e Media</h4>
+                        <p class="contact-bottom-card__text">
+                            Para questões relacionadas com media ou imprensa, contacte-nos através de geral@caca.uac.pt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter-new-section">
+            <div class="newsletter-new-container">
+                <div class="newsletter-new-content">
+                    <h2 class="newsletter-new-title">Mantenha-se Atualizado<br>com a Nossa Newsletter!</h2>
+                    <p class="newsletter-new-text">Receba as últimas novidades, eventos e avanços na investigação
+                        clínica diretamente no seu e-mail.</p>
+                </div>
+
+                <form id="newsletter-form" class="newsletter-new-form">
+                    <div class="newsletter-new-form__pill">
+                        <input type="email" id="news-email" class="newsletter-new-input" placeholder="nome@email.com"
+                            aria-label="Email para newsletter" required>
+                        <button type="submit" class="newsletter-new-btn">Subscrever →</button>
+                    </div>
+                    <div class="newsletter-new-disclaimer" id="newsletter-feedback"></div>
+                </form>
+
+                <div class="newsletter-new-proof">
+                    <div class="newsletter-new-proof__avatars">
+                        <span class="newsletter-new-proof__dot" style="background: var(--azul-500);">C</span>
+                        <span class="newsletter-new-proof__dot" style="background: var(--azul-700);">A</span>
+                        <span class="newsletter-new-proof__dot" style="background: var(--azul-400);">C</span>
+                        <span class="newsletter-new-proof__dot" style="background: var(--azul-600);">A</span>
+                    </div>
+                    <span class="newsletter-new-proof__text">+500 investigadores já subscreveram</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapa-destaques" class="section map-events-section">
+            <div class="container">
+                <div class="map-events-layout">
+
+                <div class="map-events-card">
+                    <div id="map"></div>
+                </div>
+
+
+                <div class="map-events-info">
+                    <span class="map-events-info__label">Próximos Eventos</span>
+                    <h2 class="map-events-info__title">Acompanhe as<br>Nossas Iniciativas</h2>
+
+                    <h3 class="map-events-info__subtitle">Eventos e Conferências</h3>
+                    <div class="map-events-info__details">
+                        <p>Mantenha-se atualizado sobre as nossas atividades.</p>
+                        <p>O CACA organiza diversos congressos, formações e encontros ao longo do ano em várias ilhas,
+                            visando a promoção do conhecimento científico em rede.</p>
+                        <p>Explore no mapa os próximos eventos agendados.</p>
+                    </div>
+
+                    <a href="./eventos.html" class="map-events-info__link" style="margin-top: 20px;">
+                        Gerir Eventos <span>→</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="site-footer-wrapper">
+        <div class="site-footer-bg" style="background-image: url('./assets/imagem.webp');"></div>
+        <div class="site-footer-overlay"></div>
+
+        <section class="pre-footer-cta">
+            <div class="pre-footer-cta__content">
+                <h2 class="pre-footer-cta__title">Pronto para liderar a inovação<br>da saúde nos Açores?</h2>
+                <div class="pre-footer-cta__buttons">
+                    <a href="#contactos" class="cta-btn cta-btn--white">Começar Agora</a>
+                    <a href="#missao" class="cta-btn cta-btn--outline">Saber mais <i class="fi fi-rr-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div class="footer__brand">
+                        <span class="footer__logo-text">
+                            <i class="fi fi-rr-hospital"></i>
+                            CACA
+                        </span>
+                    </div>
+
+                    <div class="footer__nav">
+                        <div class="footer__col">
+                            <h3 class="footer__title">O CACA</h3>
+                            <ul class="footer__links">
+                                <li><a href="#missao">Missão e Visão</a></li>
+                                <li><a href="#investigacao">Investigação</a></li>
+                                <li><a href="#oportunidades">Oportunidades</a></li>
+                                <li><a href="./eventos.html">Eventos</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col">
+                            <h3 class="footer__title">Comunidade</h3>
+                            <ul class="footer__links">
+                                <li><a href="#parceiros">Parceiros</a></li>
+                                <li><a href="#news-feed">Notícias</a></li>
+                                <li><a href="#estudantes">Estudantes</a></li>
+                                <li><a href="#investigadores">Investigadores</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col">
+                            <h3 class="footer__title">Informação</h3>
+                            <ul class="footer__links">
+                                <li><a href="#privacidade">Privacidade</a></li>
+                                <li><a href="#termos">Termos de Uso</a></li>
+                                <li><a href="#acessibilidade">Acessibilidade</a></li>
+                                <li><a href="#contactos">Contactos</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col">
+                            <h3 class="footer__title">Redes Sociais</h3>
+                            <ul class="footer__links">
+                                <li><a href="#twitter">Twitter</a></li>
+                                <li><a href="#linkedin">LinkedIn</a></li>
+                                <li><a href="#facebook">Facebook</a></li>
+                                <li><a href="#instagram">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__huge-text">
+                    CACA
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button type="button" class="btn-top" id="btn-topo" aria-label="Voltar ao topo">⬆</button>
+    <script type="module" src="src/app.js"></script>
+</body>
+
+</html>
